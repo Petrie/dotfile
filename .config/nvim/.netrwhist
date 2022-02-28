@@ -1,6 +1,0 @@
-let g:netrw_dirhistmax  =10
-let g:netrw_dirhistcnt =4
-let g:netrw_dirhist_4='/Users/liupengfei/workmark/python/curl_test/accountoper'
-let g:netrw_dirhist_3='/Users/liupengfei/go/src/git.inke.cn/cxcenter/queen/server/recommend/rec.strategy/Godeps'
-let g:netrw_dirhist_2='/Users/liupengfei/go/src/git.inke.cn/cxcenter/queen/server/risk/risk.logic'
-let g:netrw_dirhist_1='/Users/liupengfei/workmark/1v1'
