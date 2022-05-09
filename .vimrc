@@ -45,18 +45,18 @@ call plug#end()
 " vim默认建修改 提效
 let mapleader = ","
 inoremap jj <ESC>
+" esc 取消查询高亮
+nnoremap <esc> :noh<esc>
 
 " easymotion
 nmap ss <Plug>(easymotion-s2)
 let g:EasyMotion_smartcase = 1
-
 let g:Powerline_symbols = 'fancy'
 set laststatus=2
 set noshowmode
 set t_Co=256
 
 let Tlist_Show_One_File = 1
-
 let Tlist_Exit_OnlyWindow = 1
 let Tlist_Use_Right_Window = 1  
 let Tlist_Auto_Open=1    "在启动VIM后，自动打开taglist窗口"
