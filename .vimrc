@@ -1,6 +1,5 @@
 set shell=sh
 
-nnoremap <esc> :noh<return><esc>
 
 set nocompatible
 set fo-=r 
@@ -46,7 +45,7 @@ call plug#end()
 let mapleader = ","
 inoremap jj <ESC>
 " esc 取消查询高亮
-nnoremap <esc> :noh<esc>
+nnoremap <esc> :NERDTreeClose<CR> :let @/ = ""<CR>
 
 " easymotion
 nmap ss <Plug>(easymotion-s2)
@@ -74,7 +73,6 @@ let NERDTreeShowBookmarks=1
 nmap <Leader>n :NERDTreeFind<CR>
 " nmap <Leader>n :NERDTreeToggle<CR>
 map <silent> <Leader>e :NERDTreeToggle<cr>
-nnoremap <esc> :NERDTreeClose<esc>
 
 filetype plugin indent on    " required
 
