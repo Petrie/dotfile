@@ -1,0 +1,33 @@
+[alias]
+    co = checkout
+    ci = commit
+    br = branch
+    st = status
+	lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --
+[user]
+    #name = Petrie
+    name = liupengfei
+    email = liupengfei@inke.cn
+[core]
+    excludesfile = ~/.gitignore
+    editor = /Users/liupengfei/nvim-osx64/bin/nvim
+    pager = delta
+    hooksPath = /Users/liupengfei/.git/hooks
+
+[interactive]
+    diffFilter = delta --color-only
+
+[delta]
+    navigate = true  # use n and N to move between diff sections
+    light = false    # set to true if you're in a terminal w/ a light background color (e.g. the default macOS terminal)
+
+[merge]
+    conflictstyle = diff3
+
+[diff]
+    colorMoved = default
+[http]
+	postBuffer = 524288000
+    proxy = socks5://127.0.0.1:1090
+[https]
+    proxy = socks5://127.0.0.1:1090

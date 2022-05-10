@@ -10,11 +10,12 @@ set rtp+=~/.vim/bundle/Vundle.vim
 "set completeopt-=preview
 call vundle#begin()
     Plugin 'gmarik/Vundle.vim'
-    Plugin 'junegunn/fzf.vim'
 call vundle#end()            " required
 
 call plug#begin('~/.vim/plugged')
 " Use release branch (Recommend)
+    Plug 'junegunn/fzf', { 'do': { -> fzf#install()  }  }
+    Plug 'junegunn/fzf.vim'
     Plug 'fatih/vim-go'
     Plug 'honza/vim-snippets'
     Plug 'neoclide/coc.nvim', {'branch': 'release'}
