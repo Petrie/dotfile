@@ -9,19 +9,19 @@ export GOPATH=$HOME/go
 
 export GOROOT=/usr/local/go
 #export GOROOT=/usr/local/opt/go@1.14/libexec
-#export GOROOT=/Users/liupengfei/go/src/github.com/golang/go
+#export GOROOT=$HOME/go/src/github.com/golang/go
 
 export GOBIN=$GOROOT/bin
 
 export PATH=$PATH:$GOPATH/bin
 export PATH=$PATH:$GOBIN
-export PATH=$PATH:/Users/liupengfei/golandlanuncher
-export PATH=$PATH:/Users/liupengfei/nvim-osx64/bin
+export PATH=$PATH:$HOME/golandlanuncher
+export PATH=$PATH:%HOME/nvim-osx64/bin
 [ -f ~/.privite_profile ] && source ~/.privite_profile
 
 
 # Path to your oh-my-zsh installation.
-export ZSH="/Users/liupengfei/.oh-my-zsh"
+export ZSH="$HOME/.oh-my-zsh"
 ZSH_THEME="powerlevel10k/powerlevel10k"
 
 plugins=(
@@ -46,7 +46,7 @@ export LC_ALL=zh_CN.UTF-8
 source ~/z.sh
 eval $(thefuck --alias)
 export PATH="/usr/local/opt/lua@5.3/bin:$PATH"
-export PATH="/Users/liupengfei/ssh_shell/lg_shell:$PATH"
+export PATH="$HOME/ssh_shell/lg_shell:$PATH"
 alias n="nvim"
 export VISUAL=/usr/bin/vim
 export EDITOR=/usr/bin/vim
