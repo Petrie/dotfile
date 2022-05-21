@@ -119,8 +119,6 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias jump='$HOME/.ssh/login_inner'
-alias jtest="jump tx4-inno-honey-test02.bj"
-alias redistest="docker run -it --rm redis redis-cli -h 10.100.128.15 -p 6379 -a akj132X90Z"
 PATH="/usr/local/opt/gnu-sed/libexec/gnubin:$PATH"
 alias tnew="tmux new -s"
 export LANG=zh_CN.gbk
