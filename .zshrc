@@ -7,16 +7,19 @@ fi
 
 export GOPATH=$HOME/go
 
-export GOROOT=/usr/local/go
-#export GOROOT=/usr/local/opt/go@1.14/libexec
+#export GOROOT=/usr/local/go
+export GOROOT=/usr/local/opt/go@1.14/libexec
+#export GOROOT=/usr/local/opt/go@1.17/libexec
 #export GOROOT=$HOME/go/src/github.com/golang/go
 
-export GOBIN=$GOROOT/bin
+export GOBIN=$GOPATH/bin
 
-export PATH=$PATH:$GOPATH/bin
+export PATH=$PATH:$GOPATH/bin:$GOROOT/bin
 export PATH=$PATH:$GOBIN
+
+
 export PATH=$PATH:$HOME/golandlanuncher
-export PATH=$PATH:%HOME/nvim-osx64/bin
+export PATH=$PATH:$HOME/nvim-osx64/bin
 [ -f ~/.privite_profile ] && source ~/.privite_profile
 
 
@@ -63,3 +66,7 @@ alias unsetproxy="unset http_proxy; unset https_proxy; echo 'HTTP Proxy off';"
 
 export FZF_DEFAULT_COMMAND='ag --hidden --ignore .git -l -g ""'
 export FZF_DEFAULT_OPTS="--height 40% --layout=reverse --preview '(highlight -O ansi {} || bat {}) 2> /dev/null | head -500'"
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
