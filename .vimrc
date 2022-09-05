@@ -21,11 +21,11 @@ call plug#begin('~/.vim/plugged')
     Plug 'neoclide/coc.nvim', {'branch': 'release'}
     Plug 'rakr/vim-one' 
     Plug 'tpope/vim-commentary'
-    Plug 'soft-aesthetic/soft-era-vim'
-    Plug 'arzg/vim-colors-xcode'
-    Plug 'fatih/molokai'
-    Plug 'mhinz/vim-startify'
-    Plug 'tpope/vim-fugitive'
+    Plug 'soft-aesthetic/soft-era-vim' "syntax theme
+    Plug 'arzg/vim-colors-xcode' "color theme
+    Plug 'fatih/molokai' "color theme
+    Plug 'mhinz/vim-startify' "vim home page
+    Plug 'tpope/vim-fugitive' "git support
     Plug 'tpope/vim-surround'
     Plug 'vim-airline/vim-airline'
     Plug 'ryanoasis/vim-devicons'

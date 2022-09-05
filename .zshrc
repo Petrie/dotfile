@@ -7,9 +7,10 @@ fi
 
 export GOPATH=$HOME/go
 
+#1.18
 #export GOROOT=/usr/local/go
-export GOROOT=/usr/local/opt/go@1.14/libexec
-#export GOROOT=/usr/local/opt/go@1.17/libexec
+#export GOROOT=/usr/local/opt/go@1.14/libexec
+export GOROOT=/usr/local/opt/go@1.17/libexec
 #export GOROOT=$HOME/go/src/github.com/golang/go
 
 export GOBIN=$GOPATH/bin
@@ -55,10 +56,11 @@ export VISUAL=/usr/bin/vim
 export EDITOR=/usr/bin/vim
 
 export PATH="/usr/local/opt/mysql-client/bin:$PATH"
-export HOMEBREW_BOTTLE_DOMAIN=https://mirrors.tuna.tsinghua.edu.cn/homebrew-bottles
+#export HOMEBREW_BOTTLE_DOMAIN=https://mirrors.tuna.tsinghua.edu.cn/homebrew-bottles
 
 
-alias setproxy="export http_proxy=socks5://127.0.0.1:1090; export https_proxy=$http_proxy; echo 'HTTP Proxy on';"
+alias setproxy="export http_proxy=http://127.0.0.1:41091; export https_proxy=https://127.0.0.1:41091; echo 'HTTP Proxy on';"
+#alias setproxy="export http_proxy=socks5://127.0.0.1:1090; export https_proxy=socks5://127.0.0.1:1090; echo 'HTTP Proxy on';"
 alias unsetproxy="unset http_proxy; unset https_proxy; echo 'HTTP Proxy off';"
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
@@ -70,3 +72,5 @@ export FZF_DEFAULT_OPTS="--height 40% --layout=reverse --preview '(highlight -O 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+[[ -r "/usr/local/etc/profile.d/bash_completion.sh"  ]] && . "/usr/local/etc/profile.d/bash_completion.sh"

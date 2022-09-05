@@ -204,6 +204,10 @@ linters-settings:
         paramsOnly: true
       rangeValCopy:
         sizeThreshold: 32
+  stylecheck:
+    # 以下配置，移除对 UID、URL 等的检查
+    initialisms: ["ACL", "API", "ASCII", "CPU", "CSS", "DNS", "EOF", "GUID", "HTML", "HTTP", "HTTPS", "ID", "IP", "JSON", "QPS", "RAM", "RPC", "SLA", "SMTP", "SQL", "SSH", "TCP", "TLS", "TTL", "UDP", "UI", "GID", "UUID", "UTF8", "VM", "XML", "XMPP", "XSRF", "XSS", "SIP", "RTP", "AMQP", "DB", "TS"]
+
 # 检查器启用配置
 linters:
   # 启动的检查器列表
