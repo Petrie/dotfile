@@ -5,23 +5,31 @@ if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]
   source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
 fi
 
+[ -f ~/.privite_profile ] && source ~/.privite_profile
+
 export GOPATH=$HOME/go
 
 #1.18
 #export GOROOT=/usr/local/go
 #export GOROOT=/usr/local/opt/go@1.14/libexec
-export GOROOT=/usr/local/opt/go@1.17/libexec
+export GOROOT=/opt/homebrew/Cellar/go/1.20.6/libexec
+#export GOROOT=/opt/homebrew/opt/go@1.17/libexec
 #export GOROOT=$HOME/go/src/github.com/golang/go
 
 export GOBIN=$GOPATH/bin
 
 export PATH=$PATH:$GOPATH/bin:$GOROOT/bin
 export PATH=$PATH:$GOBIN
+#export PATH="/opt/homebrew/opt/go@1.17/bin:$PATH"
+##################
+#python
+##################
+export PIP_PATH=$HOME/Library/Python/3.9/bin
+export PATH=$PATH:$PIP_PATH
 
 
 export PATH=$PATH:$HOME/golandlanuncher
-export PATH=$PATH:$HOME/nvim-osx64/bin
-[ -f ~/.privite_profile ] && source ~/.privite_profile
+
 
 
 # Path to your oh-my-zsh installation.
@@ -51,7 +59,7 @@ source ~/z.sh
 eval $(thefuck --alias)
 export PATH="/usr/local/opt/lua@5.3/bin:$PATH"
 export PATH="$HOME/ssh_shell/lg_shell:$PATH"
-alias n="nvim"
+alias n="/opt/homebrew/bin/nvim"
 export VISUAL=/usr/bin/vim
 export EDITOR=/usr/bin/vim
 
@@ -74,3 +82,4 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
 [[ -r "/usr/local/etc/profile.d/bash_completion.sh"  ]] && . "/usr/local/etc/profile.d/bash_completion.sh"
+

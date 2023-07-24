@@ -9,7 +9,7 @@
     email = liupengfei@inke.cn
 [core]
     excludesfile = ~/.gitignore
-    editor = /Users/liupengfei/nvim-osx64/bin/nvim
+    editor = /opt/homebrew/bin/nvim
 #    pager = delta
     hooksPath = /Users/liupengfei/.git/hooks
 
@@ -27,6 +27,13 @@
     colorMoved = default
 [http]
 	postBuffer = 524288000
-    proxy = socks5://127.0.0.1:1090
+    #proxy = socks5://127.0.0.1:1090
 [https]
-    proxy = socks5://127.0.0.1:1090
+    #proxy = socks5://127.0.0.1:1090
+#[url "git@gitlab.diffusenetwork.com:"]
+#	insteadOf = http://gitlab.diffusenetwork.com
+[pull]
+	rebase = false
+	ff = only
+[include]
+    path = ~/.gitconfig_private
