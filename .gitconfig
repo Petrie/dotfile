@@ -30,8 +30,6 @@
     #proxy = socks5://127.0.0.1:1090
 [https]
     #proxy = socks5://127.0.0.1:1090
-[url "https://github.com"]
-	insteadOf = git@github.com
 [pull]
 	rebase = false
 	ff = only
