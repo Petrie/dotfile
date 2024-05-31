@@ -20,12 +20,14 @@ export LC_ALL=zh_CN.UTF-8
 export GOPATH=$HOME/go
 #export GOROOT=/usr/local/opt/go@1.14/libexec
 #export GOROOT=/opt/homebrew/Cellar/go@1.20/1.20.7/libexec
-export GOROOT=/opt/homebrew/opt/go@1.20/libexec
 #export GOROOT=/opt/homebrew/opt/go@1.17/libexec
+export GOROOT=/opt/homebrew/opt/go@1.22/libexec
+#export GOROOT=/opt/homebrew/opt/go@1.21/libexec
+#export GOROOT=/opt/homebrew/opt/go@1.21/libexec
 #export GOROOT=$HOME/go/src/github.com/golang/go
 export GOBIN=$GOPATH/bin
-export PATH=$PATH:$GOPATH/bin:$GOROOT/bin
 export PATH=$PATH:$GOBIN
+export PATH=$PATH:$GOROOT/bin
 
 ##################
 #python
@@ -90,6 +92,7 @@ export NVM_DIR="$HOME/.nvm"
 
 #
 export PATH=$PATH:$HOME/golandlanuncher
+export PATH=$PATH:"/Applications/PyCharm CE.app/Contents/MacOS"
 
 #kubectl
 export KUBECONFIG="${KUBECONFIG}:${HOME}/.kube/config"
